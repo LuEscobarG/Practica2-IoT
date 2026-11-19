@@ -21,7 +21,7 @@
 
 ## Evidencias para presentar
 
-Mostrar [resultados de software](evidencias/software-2026-11-12.md), [registros físicos](PRUEBAS_FISICAS.md), diagramas y aportes individuales en el historial de Git. No afirmar cumplimiento físico mientras falten medidas. Revisar las ocho secciones exigidas en el [enunciado](../Práctica_2.md) antes de entregar el informe.
+Mostrar [resultados de software y registro JSONL](evidencias/README.md), [registros físicos](PRUEBAS_FISICAS.md), el [video de demostración](evidencias/README.md#video-de-demostración-pf02) diagramas y aportes individuales en el historial de Git. No afirmar cumplimiento físico mientras falten medidas. Revisar las ocho secciones exigidas en el [enunciado](../Práctica_2.md) antes de entregar el informe.
 
 ## Límites que deben explicarse
 

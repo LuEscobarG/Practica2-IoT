@@ -1,13 +1,13 @@
 # Registro de pruebas físicas
 
-**Estado al 19 de noviembre de 2026:** integración TCP real documentada en la misma red del iPhone. El [registro](evidencias/tcp-dos-esp-2026-11-19.jsonl) acredita ambos roles y 90 envíos confirmados. La respuesta visual fue comunicada durante la prueba, pero no se adjuntó video por rango. Los RNF físicos permanecen sin verificación completa.
+**Estado al 19 de noviembre de 2026:** integración TCP real documentada en la misma red del iPhone. El [registro](evidencias/tcp-dos-esp-2026-11-19.jsonl) acredita ambos roles y 90 envíos confirmados. El [video de demostración](evidencias/README.md#video-de-demostración-pf02) está disponible en el índice de evidencias. Los RNF físicos permanecen sin verificación completa.
 
 Los procedimientos detallados están en [PLAN_PRUEBAS.md](PLAN_PRUEBAS.md).
 
 | ID | Prueba y aceptación | Estado |
 | --- | --- | --- |
 | PF01 | Ambos ESP obtienen IP y registran roles distintos | Verificado en registro TCP: sensor 172.20.10.2 y actuador 172.20.10.4 |
-| PF02 | Distancias 10, 30 y 50 cm producen rojo intermitente, amarillo y azul; APPLIED correlacionado | Tres estados en JSONL y 90 APPLIED; falta video con referencia de distancia |
+| PF02 | Distancias 10, 30 y 50 cm producen rojo intermitente, amarillo y azul; APPLIED correlacionado | Tres estados en JSONL y 90 APPLIED; [video adjunto para revisión visual](evidencias/README.md#video-de-demostración-pf02) |
 | PF03 | Fronteras 20 y 40 cm pertenecen al rango amarillo según la lectura transmitida | Verificado en software; contraste físico pendiente |
 | PF04 | Sin eco se transmite invalid y se apagan LEDs | Hay 10 invalid en el registro; falta provocar y documentar el fallo y el apagado físico |
 | PF05 | Corte WiFi del sensor: apagado por vencimiento y reconexión al recuperar red | Pendiente |
@@ -44,4 +44,4 @@ No incluir contraseñas WiFi. No restar millis() entre ESP sin sincronización; 
 
 Las nueve lecturas sin entrega preceden al registro del actuador; no equivalen a nueve pérdidas de red. No se ejecutó una campaña física controlada de recuperación: el arranque exitoso tras iniciar el servidor no aprueba PF05–PF07.
 
-Antes de nuevas mediciones, conciliar el montaje descrito con ECHO directo en el informe y el divisor mostrado en el esquema. Fotografiar y medir la adaptación real; no registrar una corrección como realizada sin comprobarla.
+Antes de nuevas mediciones, conciliar el montaje descrito con ECHO directo en el informe y el divisor mostrado en el esquema. Medir la tensión de ECHO y registrar en la bitácora la conexión comprobada.

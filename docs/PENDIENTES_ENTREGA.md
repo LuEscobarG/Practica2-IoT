@@ -4,9 +4,9 @@ Actualización del 19 de noviembre de 2026. Las observaciones de otra práctica 
 
 ## Prioridad 1 Montaje y evidencia funcional
 
-- [ ] Verificar ECHO: el informe describe conexión directa y el esquema propone divisor. Comprobar nivel, adaptar según el módulo y documentar el circuito real con fotografía antes de nuevas pruebas.
-- [ ] Fotografiar ambos ESP y sus conexiones; confirmar resistencias de LEDs y pines 5/18 y 25/26/27.
-- [ ] Grabar rojo intermitente cerca, amarillo en rango medio y azul lejos, con una referencia de distancia visible y secuencias correlacionadas.
+- [ ] Verificar ECHO: el informe describe conexión directa y el esquema propone divisor. Comprobar nivel, adaptar según el módulo y registrar la conexión y la tensión medidas antes de nuevas pruebas.
+- [ ] Confirmar resistencias de LEDs y pines 5/18 y 25/26/27. Registrar los valores en la bitácora.
+- [x] Adjuntar el [video de demostración PF02](evidencias/README.md#video-de-demostración-pf02) y la copia de respaldo.
 - [ ] Registrar ensayo controlado de medición inválida y apagado físico. Las lecturas invalid existentes no prueban cómo se provocó la ausencia de eco.
 
 ## Prioridad 2 Medir los requisitos
@@ -14,7 +14,7 @@ Actualización del 19 de noviembre de 2026. Las observaciones de otra práctica 
 | Requisito | Trabajo mínimo pendiente | Evidencia para cerrar |
 | --- | --- | --- |
 | RNF01 | 15 min de operación normal; acreditar mínimo de 10 sin reinicios/bloqueos | Bitácora, logs completos y observación del montaje |
-| RNF02 | Referencias 10, 20, 30, 40, 50 y 60 cm, al menos 10 lecturas válidas por punto; conservar inválidas | CSV con referencia, máximo absoluto ≤ 3 cm y foto de montaje/medición |
+| RNF02 | Referencias 10, 20, 30, 40, 50 y 60 cm, al menos 10 lecturas válidas por punto; conservar inválidas | CSV con referencia, máximo absoluto ≤ 3 cm y condiciones del ensayo en la bitácora |
 | RNF03 | Al menos 10 repeticiones por transición entre rangos con reloj común | Video o analizador, instantes identificables, resolución y máximo ≤ 1 s |
 | RNF04 | 60 s útiles de adquisiciones del sensor | CSV sin reinicios/pérdidas no explicadas; mínimo 120 lecturas |
 

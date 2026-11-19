@@ -15,7 +15,7 @@ El [complemento técnico](../implementacion.md) documenta las precisiones y el c
 | 2. Contrato y servidor | Implementada y probada | Sockets, roles, control central, buffers acotados, timeouts, apagado y simuladores. Compatibilidad con mensajes del informe. |
 | 3. Dos firmwares | Implementada y compilada | Objetos sensor/actuador independientes; inicialización del sensor, reconexión y parpadeo sin `delay()`. Dos `.bin` generados. |
 | 4. Integración | Software verificado; hardware pendiente | 29 pruebas Python, 30 casos de contrato C++, pruebas nativas y 60 s de intercambio con dos clientes TCP. Falta validar WiFi y salidas reales. |
-| 5. Validación y entrega | Documentación y herramientas preparadas | Diagramas, circuitos, guía de montaje, captura/análisis CSV y plan físico. Faltan mediciones, fotos, completar resultados del informe por el grupo y entrega GitHub/LMS. |
+| 5. Validación y entrega | Documentación y herramientas preparadas | Diagramas, circuitos, guía de montaje, captura/análisis CSV y plan físico. Video adjunto. Faltan las mediciones pendientes y la entrega GitHub/LMS. |
 
 ## Evidencia de software
 

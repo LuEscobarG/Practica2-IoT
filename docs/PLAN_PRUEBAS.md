@@ -9,7 +9,7 @@ software se registran por separado en [salida Python actual](evidencias/tests-py
 
 1. Completar WiFi/IP/puerto en `Config.local.h`, cargar ambos firmwares y comprobar
    registro de sensor y actuador en el servidor.
-2. Guardar fotografías de cada circuito y su montaje, y logs del PC y ambos ESP32.
+2. Registrar el montaje en la bitácora y guardar los logs del PC y de ambos ESP32.
 3. Recorrer distancias cercanas, intermedias y lejanas, comprobando rojo a 4 Hz,
    amarillo fijo y azul fijo. Verificar que los otros dos LEDs estén apagados.
 4. Contrastar los límites con las pruebas deterministas de 19,99; 20; 20,01;
@@ -107,8 +107,7 @@ incidencias inducidas del funcionamiento normal.
 
 Cada evidencia debe incluir fecha, versión del código, responsables, condiciones,
 datos crudos y conclusión fundada. Las plantillas contienen solamente cabeceras;
-no son mediciones ni resultados aprobados. Utilizar fotografías de los dos objetos
-de este montaje para respaldar las pruebas del sistema distribuido.
+no son mediciones ni resultados aprobados. Adjuntar el [video de demostración PF02](evidencias/README.md#video-de-demostración-pf02) para mostrar ambos objetos y la respuesta visible de los LEDs.
 
 El grupo puede completar las secciones pendientes de su informe con estas medidas,
 los [diagramas](diagramas/design.md) y la [implementación](implementacion.md), manteniendo

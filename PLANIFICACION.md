@@ -42,7 +42,7 @@ Practica2-IoT/
 
 | Etapa | Trabajo | Criterio de cierre | Estado |
 | --- | --- | --- | --- |
-| 0. Preparación | Herramientas, dos ESP32, montaje, red y configuración. | Clientes alcanzan la IP y puerto del PC. | Ambos ESP registrados en la LAN del iPhone; revisión eléctrica y fotos pendientes. |
+| 0. Preparación | Herramientas, dos ESP32, montaje, red y configuración. | Clientes alcanzan la IP y puerto del PC. | Ambos ESP registrados en la LAN del iPhone; revisión eléctrica pendiente. |
 | 1. Monorepo | Fuentes, configuración de ejemplo y entornos separados. | Dos firmwares y entrada del servidor disponibles. | Implementada. |
 | 2. Contrato y servidor | Roles, delimitación TCP, rangos, comandos y timeouts. | Pruebas del servidor y contrato aprobadas. | Implementada y probada. |
 | 3. Firmwares | Adquisición, envío, actuación, parpadeo y reconexión. | Compilaciones sensor/actuator satisfactorias. | Implementada y compilada. |
@@ -84,7 +84,8 @@ Ver los procedimientos y comandos en [validation.md](docs/PLAN_PRUEBAS.md).
 ## Lista de entrega
 
 - [ ] Configuración de red y prototipo funcional con los dos ESP32.
-- [ ] Fotografías del montaje y datos crudos de las pruebas físicas.
+- [x] Adjuntar el [video de demostración](docs/evidencias/README.md#video-de-demostración-pf02) y su enlace de respaldo.
+- [ ] Adjuntar los datos crudos de los ensayos físicos pendientes.
 - [ ] Informe Markdown con las ocho secciones exigidas, completando el contenido existente.
 - [ ] Diagramas de arquitectura, circuito de cada objeto, clases y secuencia.
 - [ ] Protocolo, rangos y resultados coherentes con el código.

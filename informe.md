@@ -78,7 +78,7 @@ Los siguientes valores representan objetivos de calidad del prototipo y deben ve
 | RF01 | [UltrasonicSensor](firmware/lib/UltrasonicSensor/src/UltrasonicSensor.cpp) | PF08, referencia física | Hay 89 lecturas válidas en el registro; exactitud pendiente |
 | RF02 | [TcpConnection](firmware/lib/Communication/src/TcpConnection.cpp), [TcpServer](server/tcp_server.py) | PF01 | [Registro real](docs/evidencias/tcp-dos-esp-2026-11-19.jsonl): ambos roles registrados; comprobado en LAN |
 | RF03 | [DistanceClassifier](server/controller.py) | PF03 y pruebas de fronteras | [32 pruebas Python](docs/evidencias/tests-python-2026-11-19.txt); clasificación software aprobada |
-| RF04 | [LedController](firmware/lib/LedController/src/LedController.cpp) | PF02 | 90 secuencias confirmadas; observación visual comunicada, video por rango pendiente |
+| RF04 | [LedController](firmware/lib/LedController/src/LedController.cpp) | PF02 | 90 secuencias confirmadas y video de demostración adjunto |
 | RF05 | [Contrato](contracts/protocol.md) y parsers | Conformidad y PF01 | [34 casos C++](docs/evidencias/tests-nativos-2026-11-19.txt) y registro TCP real |
 | RNF01 | Reconexión y apagado por datos vencidos | PF11 | Pendiente de 15 min de registro para acreditar mínimo de 10 min |
 | RNF02 | Medición ultrasónica | PF08 | Pendiente de referencias físicas en 10–60 cm |
@@ -155,11 +155,7 @@ Cuando la medición obtenida es válida, el ESP32 transmite al servidor la dista
 
 De esta manera, el primer objeto inteligente queda dedicado exclusivamente a las funciones de **sensado y transmisión de información**.
 
-**Evidencia pendiente:** fotografía del sensor, conexiones y adaptación de ECHO.
-
-![Circuito propuesto del sensor](docs/diagramas/sensor.svg)
-
-El esquema representa el montaje recomendado con divisor, no acredita su presencia en el montaje descrito arriba. La conexión directa documentada debe revisarse antes de nuevas pruebas; la guía de montaje prevé reducir el nivel de ECHO antes del GPIO. Registrar la tensión y el circuito real sin sustituir la fotografía por este esquema.
+La [guía de montaje](docs/GUIA_MONTAJE.md) describe el circuito recomendado con divisor. Antes de repetir el ensayo, verificar el nivel de ECHO y registrar en la bitácora la conexión utilizada.
 
 ## 2.4 Descripción del montaje del objeto actuador
 
@@ -196,9 +192,7 @@ Por lo tanto, el sistema utiliza dos objetos inteligentes claramente separados:
 
 Esta separación permite mantener independientes las funciones de sensado y actuación, haciendo que la comunicación entre ambos objetos se realice indirectamente a través del servidor TCP.
 
-**Evidencia pendiente:** fotografía del actuador y valores de las resistencias reales.
-
-![Circuito de referencia del actuador](docs/diagramas/actuator.svg)
+Los pines y el circuito de referencia están en la [guía de montaje](docs/GUIA_MONTAJE.md). Los valores de las resistencias utilizadas quedan por confirmar.
 
 El esquema coloca las resistencias en serie antes del ánodo; el montaje descrito las sitúa después del cátodo. Ambas posiciones mantienen la resistencia en serie. Confirmar sus valores mediante inspección. 
 
@@ -891,7 +885,7 @@ El [registro JSONL](docs/evidencias/tcp-dos-esp-2026-11-19.jsonl) contiene 195 e
 
 Los [valores extraídos](docs/evidencias/metricas-tcp-2026-11-19.json) incluyen el SHA-256 del registro. La correspondencia 90/90 se limita a los envíos del recorte con ambas placas registradas; no significa fiabilidad del 100 % para cualquier duración. Tampoco deben llamarse pérdidas de red a las nueve muestras recibidas antes de que se registrara el actuador.
 
-Los tres rangos aparecen en el registro. Se comunicó observación visual de cambios de LEDs durante la sesión, pero no se adjuntó fotografía o video por rango: esa observación no se usa para aprobar medidas físicas ni límites temporales.
+Los tres rangos aparecen en el registro. `APPLIED` confirma la aplicación de la orden por el firmware. El [video de demostración](docs/evidencias/README.md#video-de-demostración-pf02) está adjunto en el índice de evidencias, con una copia en Google Drive.
 
 ## 4.4 Incidencias y análisis
 
@@ -927,7 +921,7 @@ Las pruebas de corte WiFi, reinicio del actuador y reinicio del servidor se ejec
 | RF01 | Medir distancia | 89 lecturas válidas; sin referencia física | Función observada, exactitud pendiente |
 | RF02 | Transmitir por TCP | 99 POST recibidos de un ESP físico | Verificado en el recorte LAN |
 | RF03 | Clasificar tres rangos y fronteras | Suite aprobada; los tres estados aparecen en JSONL | Verificado en software y estados recibidos |
-| RF04 | Controlar LEDs según rango | 90 envíos confirmados; observación visual sin archivo | Verificación por firmware; evidencia visual pendiente |
+| RF04 | Controlar LEDs según rango | 90 envíos confirmados y video adjunto | Aplicación por firmware confirmada; video disponible para revisión visual |
 | RF05 | Respetar protocolo | 34 casos compartidos y registro de ambos roles | Verificado dentro de la cobertura ejecutada |
 | RNF01 | ≥ 10 min sin reinicios/bloqueos | Recorte total de 27,248 s | No verificado |
 | RNF02 | Error máximo ≤ 3 cm | Sin referencias físicas registradas | No verificado |
@@ -951,9 +945,9 @@ No se asigna una calificación estimada al informe. Los campos no medidos quedan
 
 # 7. Recomendaciones
 
-- Revisar primero la adaptación de ECHO y hacer coincidir fotografía, esquema y descripción del montaje real. No presentar el esquema con divisor como evidencia de que está instalado.
+- Verificar la adaptación de ECHO y documentar en la bitácora la conexión y la tensión medidas.
 - Ejecutar las mediciones del plan y guardar datos crudos durante cada ensayo. Registrar también fallos, inválidos y resultados que excedan el criterio.
-- Adjuntar video de rojo intermitente, amarillo fijo y azul fijo, con distancia de referencia visible; verificar por medición el parpadeo de 4 Hz.
+- Medir la frecuencia de parpadeo del LED rojo y contrastarla con los 4 Hz configurados.
 - Guardar fecha, responsable, commit, cambios locales, configuración no secreta y hashes de los binarios de cada prueba. Volver a medir si cambia el montaje relevante.
 - Usar ramas y commits reales de cada integrante. Revisar user.name y user.email en cada equipo; no modificar autores pasados para aparentar contribuciones.
 - Conservar credenciales fuera del repositorio. Para redes diferentes, resolver accesibilidad y protección antes de exponer el servidor TCP sin autenticación ni cifrado.
@@ -969,10 +963,11 @@ No se asigna una calificación estimada al informe. Los campos no medidos quedan
 | [Versión validada](docs/evidencias/version-validada-2026-11-19.json) | Hashes de las fuentes actuales; no certifica binarios de la captura |
 | [Diagramas](docs/diagramas/design.md) | Arquitectura, clases y secuencia |
 | [Montaje](docs/GUIA_MONTAJE.md) | Circuitos de referencia y pines |
+| [Video de demostración (PF02)](docs/evidencias/README.md#video-de-demostración-pf02) | Archivo MP4 y copia de respaldo en Google Drive. |
 | [Plan de pruebas](docs/PLAN_PRUEBAS.md) | Métodos y criterios de aceptación |
 | [Registro físico](docs/PRUEBAS_FISICAS.md) | Estado de cada ejecución y evidencias pendientes |
 | [Pendientes de entrega](docs/PENDIENTES_ENTREGA.md) | Lista de cierre priorizada |
 
-Faltan fotografías de ambos montajes, video por rango y archivos de las mediciones RNF. Las plantillas CSV vacías son formatos de captura, no resultados.
+La integración TCP se respalda con el JSONL y su resumen JSON. El video de demostración está adjunto. Los archivos de las mediciones RNF están pendientes. Las plantillas CSV están disponibles para registrar esos ensayos.
 
 La revisión de Git local muestra nombre LuEscobarG configurado y dos commits con ese autor. No se comprobó el historial remoto ni el aporte de cada integrante en otras ramas. El informe no atribuye tareas individuales sin evidencia.

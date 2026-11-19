@@ -49,7 +49,7 @@ Un minuto de software tampoco acredita los 10 minutos de estabilidad del montaje
 ## Evidencias físicas pendientes
 
 - Dos ESP32 identificados y conectados a la LAN, con configuración real de WiFi.
-- Fotografías de los circuitos y comportamiento de los tres rangos.
+- [Video del montaje y de los tres rangos](README.md#video-de-demostración-pf02).
 - Referencias físicas 10–60 cm, al menos 10 muestras por punto y error máximo ≤ 3 cm.
 - Medición extremo a extremo con una referencia temporal común, máximo ≤ 1 s.
 - Cadencia del sensor durante 60 s, al menos 2 lecturas/s.

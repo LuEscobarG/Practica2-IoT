@@ -85,7 +85,7 @@ usando relojes millis() de placas distintas sin sincronización.
 
 Completar PRUEBAS_FISICAS.md y seguir PLAN_PRUEBAS.md para exactitud ≤ 3 cm,
 respuesta ≤ 1 s, al menos 2 lecturas/s y mínimo 10 minutos sin reinicios/bloqueos.
-Los resultados todavía son pendientes hasta realizar las pruebas.
+La [integración TCP en LAN](evidencias/integracion-2026-11-19.md) ya tiene evidencia registrada. El [video de demostración](evidencias/README.md#video-de-demostración-pf02) está adjunto. Quedan pendientes las mediciones completas de los requisitos no funcionales.
 
 Esta primera integración es en LAN. El funcionamiento por Internet entre redes
 distintas requiere servidor alcanzable y una prueba adicional documentada.

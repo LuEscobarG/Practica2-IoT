@@ -1,6 +1,6 @@
 # Documentación de la comunicación sensor actuador por TCP
 
-Este proyecto conecta dos ESP32 mediante un servidor TCP Python: uno mide distancia con HC-SR04 y otro controla LEDs. Esta carpeta reúne diseño, operación, pruebas y evidencias. Hay pruebas de software aprobadas e integración TCP real documentada. Faltan mediciones completas de RNF, evidencia visual y prueba entre redes distintas.
+Este proyecto conecta dos ESP32 mediante un servidor TCP Python: uno mide distancia con HC-SR04 y otro controla LEDs. Esta carpeta reúne diseño, operación, pruebas y evidencias. Hay pruebas de software aprobadas e integración TCP real documentada. El [video de demostración](evidencias/README.md#video-de-demostración-pf02) está adjunto. Quedan pendientes las mediciones completas de los RNF y la prueba entre redes distintas.
 
 ## Contenido
 

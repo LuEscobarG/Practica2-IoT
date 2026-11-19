@@ -9,10 +9,10 @@ Las precisiones de rangos, delimitación y diagnóstico se documentan aquí y en
 
 | Informe actual | Enunciado | Implementación | Verificación |
 | --- | --- | --- | --- |
-| RF01: medir | RF1 | [UltrasonicSensor](../firmware/lib/UltrasonicSensor/src/UltrasonicSensor.cpp) y [cliente sensor](../firmware/src/sensor/main.cpp) | Prueba nativa del cálculo/validez y medición física pendiente. |
-| RF02: TCP | RF4 | [TcpConnection](../firmware/lib/Communication/src/TcpConnection.cpp) y [TcpServer](../server/tcp_server.py) | Integración con sockets reales en loopback; WiFi real pendiente. |
+| RF01: medir | RF1 | [UltrasonicSensor](../firmware/lib/UltrasonicSensor/src/UltrasonicSensor.cpp) y [cliente sensor](../firmware/src/sensor/main.cpp) | Cálculo y validez probados en C++; [89 lecturas válidas registradas en LAN](evidencias/metricas-tcp-2026-11-19.json). Exactitud física pendiente de medición con referencias. |
+| RF02: TCP | RF4 | [TcpConnection](../firmware/lib/Communication/src/TcpConnection.cpp) y [TcpServer](../server/tcp_server.py) | Integración en LAN con ambos ESP32 registrada en [JSONL](evidencias/tcp-dos-esp-2026-11-19.jsonl). |
 | RF03: rangos | RF2 | [DistanceClassifier](../server/controller.py) | Valores interiores y fronteras 20/40. |
-| RF04: actuadores | RF3 y RF4 | `ControlService` y [LedController](../firmware/lib/LedController/src/LedController.cpp) | Comandos por rango y temporización nativa; salida física pendiente. |
+| RF04: actuadores | RF3 y RF4 | `ControlService` y [LedController](../firmware/lib/LedController/src/LedController.cpp) | Temporización probada con GPIO simulado y [90 órdenes confirmadas](evidencias/metricas-tcp-2026-11-19.json); [video adjunto para revisión visual](evidencias/README.md#video-de-demostración-pf02). |
 | RF05: protocolo | RF4 | [Parser Python](../server/protocol.py), [parser C++](../firmware/lib/Communication/src/ProtocolCodec.cpp) y contrato | 30 casos compartidos, delimitación, errores y roles. |
 | RNF01: estabilidad | Estabilidad | Timeouts, reconexión y memoria acotada | [Plan físico de 15 minutos](PLAN_PRUEBAS.md), pendiente. |
 | RNF02: exactitud | Exactitud | Adquisición y CSV por muestra | Capturas de referencia 10–60 cm pendientes. |

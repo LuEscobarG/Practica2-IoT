@@ -299,4 +299,4 @@ Ver [red, reconexión y diagnóstico TCP](docs/configuracion-red.md). Los client
 de 15 s. El apagado de seguridad por ausencia de mediciones permanece en 2 s.
 
 
-La documentación se organiza desde el [índice de docs](docs/README.md), con plan de pruebas, registros físicos y evidencias diferenciadas.
+Consultar el [índice de documentación](docs/README.md), el [informe técnico](informe.md) y el [índice de evidencias](docs/evidencias/README.md). La integración de los dos ESP32 en LAN se respalda con el [registro JSONL](docs/evidencias/tcp-dos-esp-2026-11-19.jsonl) y las [métricas JSON](docs/evidencias/metricas-tcp-2026-11-19.json). El [video de demostración](docs/evidencias/README.md#video-de-demostración-pf02) está disponible como MP4 y mediante una copia de respaldo en Google Drive.

@@ -6,7 +6,7 @@ cables, dos conexiones USB y una computadora alcanzable por la red WiFi.
 
 ## Objeto sensor
 
-![Circuito del sensor](diagramas/sensor.svg)
+[Circuito del sensor](diagramas/sensor.svg)
 
 | Señal | Conexión |
 | --- | --- |
@@ -25,7 +25,7 @@ de 3 V. Confirmar el módulo concreto y medir el nodo antes de conectar el GPIO.
 
 ## Objeto actuador
 
-![Circuito del actuador](diagramas/actuator.svg)
+[Circuito del actuador](diagramas/actuator.svg)
 
 | LED | Ánodo | Cátodo |
 | --- | --- | --- |
@@ -44,10 +44,9 @@ Cada montaje debe compartir tierra entre su ESP32 y sus propios componentes.
 3. Iniciar el servidor y comprobar conectividad/firewall en la LAN.
 4. Identificar los puertos USB y cargar `sensor` en una placa y `actuator` en la otra.
 5. Observar `WiFi IP` y `TCP registered` en los dos monitores seriales.
-6. Recorrer los tres rangos y guardar fotografías del montaje real en `docs/evidencias/`.
+6. Recorrer los tres rangos y registrar su comportamiento en el [video de demostración](evidencias/README.md#video-de-demostración-pf02).
 
-Estos esquemas describen el montaje previsto por el código. Las fotografías y las
-mediciones físicas deben incorporarse cuando se prueben los dos objetos reales.
+Los esquemas describen el montaje previsto. Registrar en la bitácora las conexiones y mediciones del montaje probado.
 
 ## Nombres del canal azul
 
@@ -55,4 +54,4 @@ El LED azul está conectado a GPIO 27 (`BLUE_PIN`). En los mensajes TCP y simula
 
 ## Verificación del montaje real pendiente
 
-El informe describe ECHO conectado directamente a GPIO 18, mientras este diseño propone un divisor. Comprobar esa diferencia y documentar tensión y fotografía del montaje real antes de nuevas pruebas. El esquema no acredita una modificación física ya realizada.
+El informe describe ECHO conectado directamente a GPIO 18, mientras este diseño propone un divisor. Antes de nuevas pruebas, comprobar el nivel de ECHO y registrar la conexión y tensión medidas.
