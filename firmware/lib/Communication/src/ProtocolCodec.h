@@ -19,7 +19,8 @@ struct Message {
     double distance = 0;
     LedMode red = LedMode::Off;
     LedMode yellow = LedMode::Off;
-    LedMode green = LedMode::Off;
+    // Legacy wire key greenLed controls the physical blue LED.
+    LedMode blue = LedMode::Off;
     const char* errorCode = "BAD_MESSAGE";
 };
 

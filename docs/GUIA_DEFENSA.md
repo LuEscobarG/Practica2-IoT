@@ -22,3 +22,13 @@
 ## Evidencias para presentar
 
 Mostrar [resultados de software](evidencias/software-2026-11-12.md), [registros físicos](PRUEBAS_FISICAS.md), diagramas y aportes individuales en el historial de Git. No afirmar cumplimiento físico mientras falten medidas. Revisar las ocho secciones exigidas en el [enunciado](../Práctica_2.md) antes de entregar el informe.
+
+## Límites que deben explicarse
+
+- 90 confirmaciones sobre 90 envíos corresponden a un recorte, no a fiabilidad universal.
+- Hay 99 lecturas y 10 inválidas; las nueve sin entrega precedieron al registro del actuador.
+- 4,004 Hz es cadencia de recepción; falta medir adquisición y latencia física.
+- El arranque exitoso después de iniciar el servidor no prueba que el timeout fuera la causa del fallo anterior.
+- La consigna permite rangos y colores propios; explicar el canal azul y su identificador TCP histórico.
+- Reconexión espera una lectura nueva, no una orden antigua guardada.
+- Mostrar evidencia del aporte individual y explicar todos los módulos, no solo el trabajado.

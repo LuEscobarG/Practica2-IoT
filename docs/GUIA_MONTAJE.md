@@ -1,6 +1,6 @@
 # Montaje de los dos objetos inteligentes
 
-Componentes previstos: dos ESP32 DOIT DevKit V1, HC-SR04, LEDs rojo/amarillo/verde,
+Componentes previstos: dos ESP32 DOIT DevKit V1, HC-SR04, LEDs rojo/amarillo/azul,
 tres resistencias de 330 Ω, resistencias de 1 kΩ y 2 kΩ para ECHO, protoboard,
 cables, dos conexiones USB y una computadora alcanzable por la red WiFi.
 
@@ -31,7 +31,7 @@ de 3 V. Confirmar el módulo concreto y medir el nodo antes de conectar el GPIO.
 | --- | --- | --- |
 | Rojo | GPIO 25 a través de 330 Ω. | GND del ESP32 actuador. |
 | Amarillo | GPIO 26 a través de 330 Ω. | GND del ESP32 actuador. |
-| Verde | GPIO 27 a través de 330 Ω. | GND del ESP32 actuador. |
+| Azul | GPIO 27 a través de 330 Ω. | GND del ESP32 actuador. |
 
 Cada LED tiene su propia resistencia. La salida HIGH enciende el LED y LOW lo apaga.
 Los dos objetos se comunican por WiFi y no necesitan un cable de datos entre ellos.
@@ -48,3 +48,11 @@ Cada montaje debe compartir tierra entre su ESP32 y sus propios componentes.
 
 Estos esquemas describen el montaje previsto por el código. Las fotografías y las
 mediciones físicas deben incorporarse cuando se prueben los dos objetos reales.
+
+## Nombres del canal azul
+
+El LED azul está conectado a GPIO 27 (`BLUE_PIN`). En los mensajes TCP y simuladores aparece como `greenLed`, identificador conservado por compatibilidad con las placas ya programadas.
+
+## Verificación del montaje real pendiente
+
+El informe describe ECHO conectado directamente a GPIO 18, mientras este diseño propone un divisor. Comprobar esa diferencia y documentar tensión y fotografía del montaje real antes de nuevas pruebas. El esquema no acredita una modificación física ya realizada.

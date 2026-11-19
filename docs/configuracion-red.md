@@ -35,7 +35,7 @@ el servidor libera sesiones inactivas tras 15 s (--idle-timeout). Una sesión
 anterior puede causar ROLE_IN_USE temporalmente hasta vencer. PONG no mantiene
 encendidos los LEDs: se conserva apagado tras 2 s sin SET/mediciones válidas.
 
-Conexión/envío: 1000 ms; registro: 5 s. DNS se ejecuta en una tarea separada
+Conexión: 3000 ms; envío: 1000 ms; registro: 5 s. DNS se ejecuta en una tarea separada
 para no detener el control de LEDs; su duración depende de la pila WiFi.
 Solo se permite una consulta DNS pendiente por objeto.
 Si la latencia medida exige cambiar el apagado de seguridad, ajustar juntos

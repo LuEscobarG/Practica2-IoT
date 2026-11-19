@@ -60,7 +60,7 @@ APPLIED seq=43
   recibir mensajes válidos. El servidor cierra sesiones tras 15 s sin POST,
   APPLIED o PING aceptados y libera el rol. --idle-timeout configura ese plazo.
   Heartbeats no renuevan la vigencia de mediciones ni comandos.
-- Reintentos TCP cada 2 s y WiFi cada 5 s. Conexión y envío TCP limitados a
+- Reintentos TCP cada 2 s y WiFi cada 5 s. Conexión TCP limitada a 3000 ms y envío a
   1000 ms; un único mensaje pendiente. DNS en tarea separada para mantener
   el bucle de control disponible; el plazo DNS depende de la pila WiFi.
 
@@ -81,7 +81,7 @@ Errores de delimitación o codificación cierran la conexión. Errores de mensaj
 permiten intentar el siguiente mensaje correcto, sin renovar la vigencia de la
 medición. El firmware desconecta y reintenta ante ERROR o respuesta inválida.
 
-| Distancia | Rojo | Amarillo | Verde |
+| Distancia | Rojo | Amarillo | Azul |
 | --- | --- | --- | --- |
 | 0 < d < 20 | blink_4 | off | off |
 | 20 <= d <= 40 | off | on | off |
@@ -91,3 +91,9 @@ medición. El firmware desconecta y reintenta ante ERROR o respuesta inválida.
 Los [34 casos compartidos](protocol-cases.json) se ejecutan contra Python y C++.
 Las [pruebas TCP](../server/tests/test_tcp_server.py) verifican fragmentos,
 agrupación, fronteras, roles, orden de conexión, timeouts, heartbeat y reconexión.
+
+## Correspondencia con el montaje físico
+
+El canal `greenLed` del protocolo existente controla el **LED azul en GPIO 27**.
+Se conserva esa clave para compatibilidad con los firmwares ya cargados.
+Los nombres internos son `BLUE_PIN` y `Message.blue`. No se debe enviar `blueLed`: no es una clave aceptada por esta versión del protocolo.

@@ -8,7 +8,7 @@ flowchart LR
     U["HC-SR04"] --> S["ESP32 sensor<br/>Mide y envía"]
     S -->|"POST: distancia"| P["PC: servidor Python<br/>Valida y decide"]
     P -->|"SET: estados de LEDs"| A["ESP32 actuador<br/>Ejecuta el comando"]
-    A --> L["Rojo / amarillo / verde"]
+    A --> L["Rojo / amarillo / azul"]
     A -.->|"APPLIED: confirmación"| P
 ```
 
@@ -38,7 +38,7 @@ gestionan conectividad; `ProtocolCodec` interpreta los mensajes. En Python,
 y `ControlService` genera el comando. `LedController` modifica las salidas.
 
 El sensor utiliza TRIG en GPIO 5 y ECHO en GPIO 18. El actuador utiliza GPIO 25,
-26 y 27 para rojo, amarillo y verde. Los montajes se detallan en
+26 y 27 para rojo, amarillo y azul. Los montajes se detallan en
 [hardware.md](GUIA_MONTAJE.md).
 
 ## Recorrido de una medición
@@ -76,7 +76,7 @@ programa mediante `millis()`, mientras continúa la atención de la conexión.
 | --- | --- |
 | `0 < d < 20 cm` | Rojo parpadeando a 4 Hz. |
 | `20 <= d <= 40 cm` | Amarillo encendido. |
-| `d > 40 cm` | Verde encendido. |
+| `d > 40 cm` | Azul encendido. |
 | Inválida | Todos apagados. |
 
 Los otros dos LEDs están apagados en cada rango. Exactamente 20 y 40 cm son

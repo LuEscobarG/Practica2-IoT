@@ -42,7 +42,7 @@ sequenceDiagram
         else 20 cm hasta 40 cm inclusive
             P->>A: SET seq=n amarillo on, otros off
         else d mayor que 40 cm
-            P->>A: SET seq=n verde on, otros off
+            P->>A: SET seq=n azul on, otros off
         end
         A->>A: Aplicar salida y conservar fase si no cambió el modo
         A-->>P: APPLIED seq=n

@@ -12,7 +12,7 @@
     <text x="62" y="338">GND</text>
     <text x="355" y="148">330 Ω</text><text x="492" y="132">Rojo</text>
     <text x="355" y="218">330 Ω</text><text x="492" y="202">Amarillo</text>
-    <text x="355" y="288">330 Ω</text><text x="492" y="272">Verde</text>
+    <text x="355" y="288">330 Ω</text><text x="492" y="272">Azul</text>
     <text x="40" y="430">Cada GPIO → resistencia → ánodo LED; cátodos → GND del mismo ESP32.</text>
   </g>
   <g fill="none" stroke="#52616c" stroke-width="2.5">
@@ -28,6 +28,6 @@
   </g>
   <polygon points="490,155 490,185 516,170" fill="#d34b58" stroke="#52616c" stroke-width="2"/>
   <polygon points="490,225 490,255 516,240" fill="#efc849" stroke="#52616c" stroke-width="2"/>
-  <polygon points="490,295 490,325 516,310" fill="#58a677" stroke="#52616c" stroke-width="2"/>
+  <polygon points="490,295 490,325 516,310" fill="#3979d6" stroke="#52616c" stroke-width="2"/>
   <circle cx="650" cy="240" r="4" fill="#52616c"/><circle cx="650" cy="310" r="4" fill="#52616c"/>
 </svg>

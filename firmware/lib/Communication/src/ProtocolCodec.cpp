@@ -138,7 +138,7 @@ bool ProtocolCodec::parse(const char* line, Message& message) {
     } else if (strcmp(command, "SET") == 0) {
         if (payloadCount != 3 || !ledMode(argument(args, count, "redLed"), message.red)
             || !ledMode(argument(args, count, "yellowLed"), message.yellow)
-            || !ledMode(argument(args, count, "greenLed"), message.green)) { return false; }
+            || !ledMode(argument(args, count, "greenLed"), message.blue)) { return false; }
         message.kind = Kind::Set;
     } else if (strcmp(command, "PING") == 0 || strcmp(command, "PONG") == 0) {
         if (count) { return false; }

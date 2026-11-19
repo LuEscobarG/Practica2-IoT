@@ -1,0 +1,195 @@
+{"event": "server_started", "time": 1795091809.3610535, "host": "0.0.0.0", "port": 5000}
+{"event": "connected", "time": 1795091811.768568, "session": "eaacc49c9b2b", "peer": "172.20.10.2"}
+{"event": "registered", "time": 1795091811.7695708, "session": "eaacc49c9b2b", "role": "sensor"}
+{"event": "measurement", "time": 1795091812.0542202, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1615, "distance_cm": null, "state": "invalid", "delivered": false}
+{"event": "measurement", "time": 1795091812.27816, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1616, "distance_cm": 48.88, "state": "far", "delivered": false}
+{"event": "measurement", "time": 1795091812.5521193, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1617, "distance_cm": null, "state": "invalid", "delivered": false}
+{"event": "measurement", "time": 1795091812.78395, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1618, "distance_cm": 50.0, "state": "far", "delivered": false}
+{"event": "measurement", "time": 1795091813.052344, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1619, "distance_cm": null, "state": "invalid", "delivered": false}
+{"event": "measurement", "time": 1795091813.2825437, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1620, "distance_cm": 50.0, "state": "far", "delivered": false}
+{"event": "measurement", "time": 1795091813.5522828, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1621, "distance_cm": null, "state": "invalid", "delivered": false}
+{"event": "measurement", "time": 1795091813.803371, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1622, "distance_cm": null, "state": "invalid", "delivered": false}
+{"event": "measurement", "time": 1795091814.0522928, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1623, "distance_cm": null, "state": "invalid", "delivered": false}
+{"event": "connected", "time": 1795091814.1667259, "session": "3e6a5dc5920a", "peer": "172.20.10.4"}
+{"event": "registered", "time": 1795091814.169674, "session": "3e6a5dc5920a", "role": "actuator"}
+{"event": "applied", "time": 1795091814.1836886, "session": "3e6a5dc5920a", "role": "actuator", "seq": null}
+{"event": "measurement", "time": 1795091814.304848, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1624, "distance_cm": null, "state": "invalid", "delivered": true}
+{"event": "applied", "time": 1795091814.3893917, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1624}
+{"event": "measurement", "time": 1795091814.5533912, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1625, "distance_cm": null, "state": "invalid", "delivered": true}
+{"event": "applied", "time": 1795091814.6113064, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1625}
+{"event": "measurement", "time": 1795091814.803812, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1626, "distance_cm": null, "state": "invalid", "delivered": true}
+{"event": "applied", "time": 1795091814.9011056, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1626}
+{"event": "measurement", "time": 1795091815.0244026, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1627, "distance_cm": 49.66, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091815.10528, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1627}
+{"event": "measurement", "time": 1795091815.2815523, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1628, "distance_cm": 49.66, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091815.3083816, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1628}
+{"event": "measurement", "time": 1795091815.5295098, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1629, "distance_cm": 48.09, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091815.6161213, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1629}
+{"event": "measurement", "time": 1795091815.7784595, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1630, "distance_cm": 47.09, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091815.8203032, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1630}
+{"event": "measurement", "time": 1795091816.0296082, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1631, "distance_cm": 47.09, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091816.1314688, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1631}
+{"event": "measurement", "time": 1795091816.278007, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1632, "distance_cm": 46.78, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091816.332157, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1632}
+{"event": "measurement", "time": 1795091816.5323234, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1633, "distance_cm": 46.68, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091816.6406224, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1633}
+{"event": "measurement", "time": 1795091816.7818825, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1634, "distance_cm": 46.8, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091816.8450062, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1634}
+{"event": "measurement", "time": 1795091817.024049, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1635, "distance_cm": 46.7, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091817.048926, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1635}
+{"event": "measurement", "time": 1795091817.277586, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1636, "distance_cm": 46.78, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091817.3581028, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1636}
+{"event": "measurement", "time": 1795091817.5283685, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1637, "distance_cm": 46.7, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091817.5644393, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1637}
+{"event": "measurement", "time": 1795091817.7769213, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1638, "distance_cm": 46.78, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091817.8704476, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1638}
+{"event": "measurement", "time": 1795091818.0270612, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1639, "distance_cm": 46.31, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091818.0767994, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1639}
+{"event": "measurement", "time": 1795091818.2779062, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1640, "distance_cm": 46.7, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091818.3850322, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1640}
+{"event": "measurement", "time": 1795091818.52763, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1641, "distance_cm": 46.31, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091818.586001, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1641}
+{"event": "measurement", "time": 1795091818.778535, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1642, "distance_cm": 46.34, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091818.8931205, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1642}
+{"event": "measurement", "time": 1795091819.0301366, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1643, "distance_cm": 46.41, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091819.1009233, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1643}
+{"event": "measurement", "time": 1795091819.27684, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1644, "distance_cm": 46.29, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091819.3026772, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1644}
+{"event": "measurement", "time": 1795091819.5280187, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1645, "distance_cm": 46.7, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091819.6102543, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1645}
+{"event": "measurement", "time": 1795091819.7794995, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1646, "distance_cm": 47.11, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091819.8133748, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1646}
+{"event": "measurement", "time": 1795091820.0260665, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1647, "distance_cm": 47.5, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091820.1215851, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1647}
+{"event": "measurement", "time": 1795091820.2770953, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1648, "distance_cm": 46.68, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091820.3302143, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1648}
+{"event": "measurement", "time": 1795091820.5288458, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1649, "distance_cm": 46.68, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091820.633099, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1649}
+{"event": "measurement", "time": 1795091820.7768373, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1650, "distance_cm": 46.78, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091820.841877, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1650}
+{"event": "measurement", "time": 1795091821.0359104, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1651, "distance_cm": 47.5, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091821.1451964, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1651}
+{"event": "measurement", "time": 1795091821.2785263, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1652, "distance_cm": 47.09, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091821.3499076, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1652}
+{"event": "measurement", "time": 1795091821.5283208, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1653, "distance_cm": 47.29, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091821.5543542, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1653}
+{"event": "measurement", "time": 1795091821.7805285, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1654, "distance_cm": 49.49, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091821.861844, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1654}
+{"event": "measurement", "time": 1795091822.026435, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1655, "distance_cm": 49.66, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091822.069742, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1655}
+{"event": "measurement", "time": 1795091822.2829876, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1656, "distance_cm": 49.49, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091822.373898, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1656}
+{"event": "measurement", "time": 1795091822.5298202, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1657, "distance_cm": 48.89, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091822.5855622, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1657}
+{"event": "measurement", "time": 1795091822.7812557, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1658, "distance_cm": 47.5, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091822.88756, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1658}
+{"event": "measurement", "time": 1795091823.030561, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1659, "distance_cm": 47.89, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091823.0938547, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1659}
+{"event": "measurement", "time": 1795091823.2785738, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1660, "distance_cm": 46.61, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091823.399128, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1660}
+{"event": "measurement", "time": 1795091823.533075, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1661, "distance_cm": 48.3, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091823.560747, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1661}
+{"event": "measurement", "time": 1795091823.7790766, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1662, "distance_cm": 47.89, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091823.8064346, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1662}
+{"event": "measurement", "time": 1795091824.030531, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1663, "distance_cm": 47.89, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091824.1164196, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1663}
+{"event": "measurement", "time": 1795091824.2770655, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1664, "distance_cm": 48.28, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091824.322024, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1664}
+{"event": "measurement", "time": 1795091824.5279007, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1665, "distance_cm": 48.28, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091824.6274421, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1665}
+{"event": "measurement", "time": 1795091824.7773504, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1666, "distance_cm": 47.09, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091824.8496006, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1666}
+{"event": "measurement", "time": 1795091825.029569, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1667, "distance_cm": 48.3, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091825.1374974, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1667}
+{"event": "measurement", "time": 1795091825.2774863, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1668, "distance_cm": 46.94, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091825.291299, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1668}
+{"event": "measurement", "time": 1795091825.5325937, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1669, "distance_cm": 47.69, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091825.653163, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1669}
+{"event": "measurement", "time": 1795091825.7767127, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1670, "distance_cm": 47.69, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091825.8562467, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1670}
+{"event": "measurement", "time": 1795091826.0240445, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1671, "distance_cm": 48.48, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091826.0614164, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1671}
+{"event": "measurement", "time": 1795091826.2787461, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1672, "distance_cm": 47.09, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091826.3676128, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1672}
+{"event": "measurement", "time": 1795091826.5267167, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1673, "distance_cm": 46.29, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091826.57181, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1673}
+{"event": "measurement", "time": 1795091826.7773597, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1674, "distance_cm": 45.9, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091826.8817384, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1674}
+{"event": "measurement", "time": 1795091827.0238051, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1675, "distance_cm": 46.29, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091827.0839422, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1675}
+{"event": "measurement", "time": 1795091827.2859554, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1676, "distance_cm": 46.29, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091827.409562, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1676}
+{"event": "measurement", "time": 1795091827.5307899, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1677, "distance_cm": 46.29, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091827.540472, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1677}
+{"event": "measurement", "time": 1795091827.7771344, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1678, "distance_cm": 46.9, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091827.8025117, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1678}
+{"event": "measurement", "time": 1795091828.0279436, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1679, "distance_cm": 49.64, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091828.1119096, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1679}
+{"event": "measurement", "time": 1795091828.2782984, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1680, "distance_cm": 56.41, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091828.3157952, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1680}
+{"event": "measurement", "time": 1795091828.5280855, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1681, "distance_cm": 49.81, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091828.6210704, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1681}
+{"event": "measurement", "time": 1795091828.777775, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1682, "distance_cm": 50.0, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091828.8262243, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1682}
+{"event": "measurement", "time": 1795091829.0271366, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1683, "distance_cm": 49.98, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091829.1326454, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1683}
+{"event": "measurement", "time": 1795091829.2758498, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1684, "distance_cm": 11.97, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091829.3390727, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1684}
+{"event": "measurement", "time": 1795091829.530712, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1685, "distance_cm": 9.88, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091829.6455452, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1685}
+{"event": "measurement", "time": 1795091829.77763, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1686, "distance_cm": 9.88, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091829.8497398, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1686}
+{"event": "measurement", "time": 1795091830.026258, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1687, "distance_cm": 8.5, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091830.0551736, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1687}
+{"event": "measurement", "time": 1795091830.277984, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1688, "distance_cm": 10.59, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091830.3616488, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1688}
+{"event": "measurement", "time": 1795091830.5253227, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1689, "distance_cm": 3.35, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091830.56613, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1689}
+{"event": "measurement", "time": 1795091830.7773623, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1690, "distance_cm": 3.67, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091830.8748205, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1690}
+{"event": "measurement", "time": 1795091831.0275135, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1691, "distance_cm": 3.67, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091831.0788865, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1691}
+{"event": "measurement", "time": 1795091831.2841892, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1692, "distance_cm": 10.23, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091831.3865411, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1692}
+{"event": "measurement", "time": 1795091831.5258582, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1693, "distance_cm": 28.22, "state": "mid", "delivered": true}
+{"event": "applied", "time": 1795091831.5897052, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1693}
+{"event": "measurement", "time": 1795091831.7782695, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1694, "distance_cm": 54.06, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091831.8968549, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1694}
+{"event": "measurement", "time": 1795091832.0303023, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1695, "distance_cm": 56.39, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091832.0435913, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1695}
+{"event": "measurement", "time": 1795091832.2790756, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1696, "distance_cm": 41.34, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091832.3115306, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1696}
+{"event": "measurement", "time": 1795091832.529865, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1697, "distance_cm": 59.33, "state": "far", "delivered": true}
+{"event": "applied", "time": 1795091832.614955, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1697}
+{"event": "measurement", "time": 1795091832.7750003, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1698, "distance_cm": 16.1, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091832.81984, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1698}
+{"event": "measurement", "time": 1795091833.0268214, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1699, "distance_cm": 8.5, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091833.1258051, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1699}
+{"event": "measurement", "time": 1795091833.2746496, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1700, "distance_cm": 9.54, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091833.331086, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1700}
+{"event": "measurement", "time": 1795091833.533994, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1701, "distance_cm": 10.59, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091833.639446, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1701}
+{"event": "measurement", "time": 1795091833.7761686, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1702, "distance_cm": 8.5, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091833.8484187, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1702}
+{"event": "measurement", "time": 1795091834.0244317, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1703, "distance_cm": 7.23, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091834.0483713, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1703}
+{"event": "measurement", "time": 1795091834.2764232, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1704, "distance_cm": 11.27, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091834.3581657, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1704}
+{"event": "measurement", "time": 1795091834.5276608, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1705, "distance_cm": 16.42, "state": "near", "delivered": true}
+{"event": "applied", "time": 1795091834.5619957, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1705}
+{"event": "measurement", "time": 1795091834.7778158, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1706, "distance_cm": 23.61, "state": "mid", "delivered": true}
+{"event": "applied", "time": 1795091834.86749, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1706}
+{"event": "measurement", "time": 1795091835.0527375, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1707, "distance_cm": null, "state": "invalid", "delivered": true}
+{"event": "applied", "time": 1795091835.0899928, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1707}
+{"event": "measurement", "time": 1795091835.2803013, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1708, "distance_cm": 24.19, "state": "mid", "delivered": true}
+{"event": "applied", "time": 1795091835.37814, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1708}
+{"event": "measurement", "time": 1795091835.5252883, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1709, "distance_cm": 22.75, "state": "mid", "delivered": true}
+{"event": "applied", "time": 1795091835.584842, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1709}
+{"event": "measurement", "time": 1795091835.779854, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1710, "distance_cm": 23.61, "state": "mid", "delivered": true}
+{"event": "applied", "time": 1795091835.8920934, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1710}
+{"event": "measurement", "time": 1795091836.0249681, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1711, "distance_cm": 22.75, "state": "mid", "delivered": true}
+{"event": "applied", "time": 1795091836.0358434, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1711}
+{"event": "measurement", "time": 1795091836.2753305, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1712, "distance_cm": 21.52, "state": "mid", "delivered": true}
+{"event": "applied", "time": 1795091836.3002915, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1712}
+{"event": "measurement", "time": 1795091836.5270994, "session": "eaacc49c9b2b", "role": "sensor", "seq": 1713, "distance_cm": 29.38, "state": "mid", "delivered": true}
+{"event": "applied", "time": 1795091836.6087205, "session": "3e6a5dc5920a", "role": "actuator", "seq": 1713}

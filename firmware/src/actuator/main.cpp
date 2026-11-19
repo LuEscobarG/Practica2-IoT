@@ -5,7 +5,7 @@
 #include "TcpConnection.h"
 
 namespace {
-LedController leds(Config::RED_PIN, Config::YELLOW_PIN, Config::GREEN_PIN);
+LedController leds(Config::RED_PIN, Config::YELLOW_PIN, Config::BLUE_PIN);
 WifiConnection wifi;
 TcpConnection tcp;
 uint32_t commandedAt = 0;

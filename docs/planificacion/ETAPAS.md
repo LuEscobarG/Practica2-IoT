@@ -1,5 +1,7 @@
 # Estado de implementación por etapas
 
+> Actualización del 19 de noviembre: integración TCP con ambos ESP registrada; 99 muestras, 90 envíos confirmados. [Resultados actuales](../evidencias/metricas-tcp-2026-11-19.json) y [pendientes](../PENDIENTES_ENTREGA.md). Las tablas de octubre y la actualización del 12 de noviembre se conservan como historial, no como estado actual.
+
 > Actualización del 12 de noviembre de 2026: configuración compartida restaurada, DNS asíncrono, heartbeat y liberación de sesiones incorporados. Pasaron 32 pruebas Python, 34 casos comunes y ambas compilaciones. Ver [resultados actuales](../evidencias/software-2026-11-12.md). Las cifras de octubre que siguen son históricas.
 
 Fecha: 13 de octubre de 2026. El [informe de práctica 2](../../informe.md) se conservó

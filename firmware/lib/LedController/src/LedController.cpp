@@ -1,7 +1,7 @@
 #include "LedController.h"
 #include <Arduino.h>
 
-LedController::LedController(int red, int yellow, int green) : channels_{{red}, {yellow}, {green}} {}
+LedController::LedController(int red, int yellow, int blue) : channels_{{red}, {yellow}, {blue}} {}
 
 void LedController::begin() {
     for (Channel& channel : channels_) {
@@ -22,7 +22,7 @@ void LedController::setMode(Channel& channel, Protocol::LedMode mode, uint32_t n
 void LedController::apply(const Protocol::Message& command, uint32_t now) {
     setMode(channels_[0], command.red, now);
     setMode(channels_[1], command.yellow, now);
-    setMode(channels_[2], command.green, now);
+    setMode(channels_[2], command.blue, now);
 }
 
 void LedController::off(uint32_t now) {

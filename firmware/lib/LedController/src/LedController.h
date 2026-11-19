@@ -4,7 +4,7 @@
 
 class LedController {
 public:
-    LedController(int red, int yellow, int green);
+    LedController(int red, int yellow, int blue);
     void begin();
     void apply(const Protocol::Message& command, uint32_t now);
     void update(uint32_t now);

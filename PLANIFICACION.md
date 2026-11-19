@@ -42,11 +42,11 @@ Practica2-IoT/
 
 | Etapa | Trabajo | Criterio de cierre | Estado |
 | --- | --- | --- | --- |
-| 0. Preparación | Herramientas, dos ESP32, montaje, red y configuración. | Clientes alcanzan la IP y puerto del PC. | Herramientas listas; configuración y montaje pendientes. |
+| 0. Preparación | Herramientas, dos ESP32, montaje, red y configuración. | Clientes alcanzan la IP y puerto del PC. | Ambos ESP registrados en la LAN del iPhone; revisión eléctrica y fotos pendientes. |
 | 1. Monorepo | Fuentes, configuración de ejemplo y entornos separados. | Dos firmwares y entrada del servidor disponibles. | Implementada. |
 | 2. Contrato y servidor | Roles, delimitación TCP, rangos, comandos y timeouts. | Pruebas del servidor y contrato aprobadas. | Implementada y probada. |
 | 3. Firmwares | Adquisición, envío, actuación, parpadeo y reconexión. | Compilaciones sensor/actuator satisfactorias. | Implementada y compilada. |
-| 4. Integración | Flujo completo, límites, datos inválidos y recuperación. | Funcionamiento en la LAN con ambos objetos. | Software probado; hardware pendiente. |
+| 4. Integración | Flujo completo, límites, datos inválidos y recuperación. | Funcionamiento en la LAN con ambos objetos. | Integración TCP física documentada; mediciones RNF y campaña de recuperación pendientes. |
 | 5. Validación y entrega | Medidas físicas, evidencias, informe, demo y defensa. | Requisitos demostrados y repositorio accesible para el docente. | Guías y herramientas listas; pruebas físicas y cierre pendientes. |
 
 ## Control y protocolo
@@ -55,7 +55,7 @@ Practica2-IoT/
 | --- | --- |
 | `0 < d < 20` | Rojo parpadea a 4 Hz; otros apagados. |
 | `20 <= d <= 40` | Amarillo fijo; otros apagados. |
-| `d > 40` | Verde fijo; otros apagados. |
+| `d > 40` | Azul fijo; otros apagados. |
 | Medición inválida o datos vencidos | Todos apagados. |
 
 Los límites 20 y 40 pertenecen al rango intermedio. El
@@ -65,6 +65,8 @@ Cada mensaje termina en salto de línea; los receptores manejan fragmentos y
 líneas agrupadas mediante buffers acotados.
 
 ## Validación pendiente
+
+Estado actualizado: [99 mediciones reales y 90 confirmaciones](docs/evidencias/metricas-tcp-2026-11-19.json). La lista siguiente corresponde a completar una campaña formal con evidencia, no a negar la comunicación ya observada.
 
 1. Configurar WiFi, IPv4 del PC y puerto en `Config.local.h`; cargar los programas
    en sus respectivos ESP32 y comprobar registro.

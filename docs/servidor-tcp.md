@@ -16,7 +16,7 @@ El servidor usa la biblioteca estándar de Python. Los clientes apuntan a una IP
 
 1. REGISTER identifica el rol y OK confirma registro.
 2. El sensor envía POST con distancia o status=invalid.
-3. El servidor clasifica y envía SET: rojo intermitente si d < 20, amarillo si 20 ≤ d ≤ 40, verde si d > 40; datos inválidos apagan todos.
+3. El servidor clasifica y envía SET: rojo intermitente si d < 20, amarillo si 20 ≤ d ≤ 40, azul si d > 40; datos inválidos apagan todos.
 4. El actuador responde APPLIED con la misma secuencia cuando existe.
 5. PING recibe PONG para comprobar conexión.
 

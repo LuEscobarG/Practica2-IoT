@@ -1,0 +1,37 @@
+test_boundaries (test_controller.ControllerTests.test_boundaries) ... ok
+test_each_range_has_one_active_led (test_controller.ControllerTests.test_each_range_has_one_active_led) ... ok
+test_invalid_readings_turn_all_leds_off (test_controller.ControllerTests.test_invalid_readings_turn_all_leds_off) ... ok
+test_empty_data_is_not_a_pass (test_measurements.EvidenceToolsTests.test_empty_data_is_not_a_pass) ... ok
+test_exactitude_uses_worst_sample_instead_of_average (test_measurements.EvidenceToolsTests.test_exactitude_uses_worst_sample_instead_of_average) ... ok
+test_missing_serial_records_are_reported (test_measurements.EvidenceToolsTests.test_missing_serial_records_are_reported) ... ok
+test_reset_requires_separate_sessions (test_measurements.EvidenceToolsTests.test_reset_requires_separate_sessions) ... ok
+test_serial_parser_distinguishes_samples_from_diagnostics (test_measurements.EvidenceToolsTests.test_serial_parser_distinguishes_samples_from_diagnostics) ... ok
+test_timer_rollover_is_supported (test_measurements.EvidenceToolsTests.test_timer_rollover_is_supported) ... ok
+test_fragmented_and_coalesced_lines (test_protocol.ProtocolTests.test_fragmented_and_coalesced_lines) ... ok
+test_limit_with_crlf (test_protocol.ProtocolTests.test_limit_with_crlf) ... ok
+test_non_ascii_is_rejected (test_protocol.ProtocolTests.test_non_ascii_is_rejected) ... ok
+test_overflow_without_terminator (test_protocol.ProtocolTests.test_overflow_without_terminator) ... ok
+test_set_format_matches_report (test_protocol.ProtocolTests.test_set_format_matches_report) ... ok
+test_shared_contract (test_protocol.ProtocolTests.test_shared_contract) ... ok
+test_actuator_arrives_after_sensor_without_replaying_old_data (test_tcp_server.TcpServerTests.test_actuator_arrives_after_sensor_without_replaying_old_data) ... ok
+test_actuator_reconnect_starts_off_and_waits_for_new_post (test_tcp_server.TcpServerTests.test_actuator_reconnect_starts_off_and_waits_for_new_post) ... ok
+test_duplicate_role_does_not_replace_existing_sensor (test_tcp_server.TcpServerTests.test_duplicate_role_does_not_replace_existing_sensor) ... ok
+test_heartbeat_keeps_idle_actuator_registered (test_tcp_server.TcpServerTests.test_heartbeat_keeps_idle_actuator_registered) ... ok
+test_idle_session_releases_role_and_turns_off (test_tcp_server.TcpServerTests.test_idle_session_releases_role_and_turns_off) ... ok
+test_invalid_measurement_is_a_distinct_safe_state (test_tcp_server.TcpServerTests.test_invalid_measurement_is_a_distinct_safe_state) ... ok
+test_malformed_message_can_be_followed_by_valid_message (test_tcp_server.TcpServerTests.test_malformed_message_can_be_followed_by_valid_message) ... ok
+test_measurement_timeout_turns_outputs_off (test_tcp_server.TcpServerTests.test_measurement_timeout_turns_outputs_off) ... ok
+test_metadata_and_applied_acknowledgment (test_tcp_server.TcpServerTests.test_metadata_and_applied_acknowledgment) ... ok
+test_missing_registration_and_wrong_role (test_tcp_server.TcpServerTests.test_missing_registration_and_wrong_role) ... ok
+test_oversized_line_closes_connection (test_tcp_server.TcpServerTests.test_oversized_line_closes_connection) ... ok
+test_partial_registration_and_multiple_posts (test_tcp_server.TcpServerTests.test_partial_registration_and_multiple_posts) ... ok
+test_ping_pong_and_role_validation (test_tcp_server.TcpServerTests.test_ping_pong_and_role_validation) ... ok
+test_port_can_be_reused_after_shutdown (test_tcp_server.TcpServerTests.test_port_can_be_reused_after_shutdown) ... ok
+test_report_messages_and_all_boundaries (test_tcp_server.TcpServerTests.test_report_messages_and_all_boundaries) ... ok
+test_sensor_disconnect_and_reconnect (test_tcp_server.TcpServerTests.test_sensor_disconnect_and_reconnect) ... ok
+test_unregistered_client_timeout (test_tcp_server.TcpServerTests.test_unregistered_client_timeout) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.908s
+
+OK

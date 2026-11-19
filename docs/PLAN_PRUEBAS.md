@@ -3,7 +3,7 @@
 El [informe actual](../informe.md) declara 10 minutos sin reinicios/bloqueos,
 error máximo de 3 cm, respuesta de hasta 1 s y al menos 2 lecturas/s. Estas pruebas
 permiten comprobar esos objetivos con el montaje real. Las verificaciones de
-software se registran por separado en [software-validation.md](evidencias/software-validation.md).
+software se registran por separado en [salida Python actual](evidencias/tests-python-2026-11-19.txt) y [salida nativa](evidencias/tests-nativos-2026-11-19.txt).
 
 ## Preparación y pruebas funcionales
 
@@ -11,7 +11,7 @@ software se registran por separado en [software-validation.md](evidencias/softwa
    registro de sensor y actuador en el servidor.
 2. Guardar fotografías de cada circuito y su montaje, y logs del PC y ambos ESP32.
 3. Recorrer distancias cercanas, intermedias y lejanas, comprobando rojo a 4 Hz,
-   amarillo fijo y verde fijo. Verificar que los otros dos LEDs estén apagados.
+   amarillo fijo y azul fijo. Verificar que los otros dos LEDs estén apagados.
 4. Contrastar los límites con las pruebas deterministas de 19,99; 20; 20,01;
    39,99; 40 y 40,01 cm. En el montaje se clasifica la lectura transmitida, que
    puede diferir de la distancia de la cinta métrica por el error del sensor.
@@ -114,3 +114,15 @@ El grupo puede completar las secciones pendientes de su informe con estas medida
 los [diagramas](diagramas/design.md) y la [implementación](implementacion.md), manteniendo
 sus textos existentes. Ensayar demo y defensa individual, comprobar los commits
 de ambos integrantes y entregar el enlace del repositorio por LMS-UCB.
+
+## Recuperación controlada
+
+Ejecutar tres repeticiones de cada escenario, separadas de estabilidad: corte WiFi del sensor, reinicio del actuador y parada/reinicio del servidor. Registrar instante de corte, último SET, apagado físico, restitución de conectividad, nuevo REGISTER y primer APPLIED de una lectura nueva. Anotar método y resolución temporal; el plazo de seguridad configurado es 2 s sin comandos válidos. El tiempo de recuperación se mide y reporta, sin asignar un límite no declarado.
+
+No reproducir lecturas antiguas al reconectar: este sistema no mantiene órdenes pendientes. El criterio es apagado inicial y aplicación de una lectura nueva. Conservar tanto ejecuciones fallidas como satisfactorias.
+
+## Integridad y cierre de evidencia
+
+Antes de cada ensayo registrar fecha, responsable, red, puertos, versión y cambios locales. Guardar el hash de cada firmware cargado y los archivos crudos. Cerrar el monitor serial antes de usar capture_serial sobre el mismo puerto. No abrir dos programas que compitan por COM5 o COM6.
+
+El recorte existente acredita comunicación LAN y no sustituye los ensayos anteriores. Revisar [pendientes](PENDIENTES_ENTREGA.md). La correspondencia sensor–LED requiere video o captura instrumental; la confirmación APPLIED no prueba el cambio luminoso.

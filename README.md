@@ -156,7 +156,7 @@ Para omitir solamente la compilación ESP32:
 
 Pines en [Config.h](firmware/include/Config.h): sensor TRIG 5 y ECHO 18; actuador
 
-rojo 25, amarillo 26 y verde 27. Cada ESP32 utiliza solamente su conjunto.
+rojo 25, amarillo 26 y azul 27. Cada ESP32 utiliza solamente su conjunto.
 
 
 

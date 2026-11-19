@@ -1,0 +1,22 @@
+{
+  "source": "docs/evidencias/tcp-dos-esp-2026-11-19.jsonl",
+  "source_sha256": "18a41e52093c616348af754b6859801a4307f593e8c1847bfa4ccaac19e65fdd",
+  "events": 195,
+  "recording_span_s": 27.247667,
+  "measurement_count": 99,
+  "valid": 89,
+  "invalid": 10,
+  "states": {
+    "invalid": 10,
+    "far": 64,
+    "near": 17,
+    "mid": 8
+  },
+  "delivered": 90,
+  "confirmed_delivered": 90,
+  "measurement_span_s": 24.472879,
+  "server_reception_rate_hz": 4.004433,
+  "sequence_first": 1615,
+  "sequence_last": 1713,
+  "missing_sequences": 0
+}

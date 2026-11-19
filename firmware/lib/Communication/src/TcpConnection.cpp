@@ -66,11 +66,17 @@ void TcpConnection::update(uint32_t now, bool wifiOnline) {
         }
         lastAttempt_ = now;
         Serial.printf("TCP connecting: %s:%u\n", host_, port_);
+        uint32_t connectStarted = millis();
         if (!client_.connect(address, port_, settings_.connectTimeoutMs)) {
-            Serial.println("TCP connect failed; check server, address, port and firewall");
+            Serial.printf("TCP connect failed: elapsed_ms=%lu limit_ms=%ld RSSI=%ld dBm; see WiFiClient log\n",
+                          static_cast<unsigned long>(millis() - connectStarted),
+                          static_cast<long>(settings_.connectTimeoutMs), static_cast<long>(WiFi.RSSI()));
             lastAttempt_ = millis();
             return;
         }
+        Serial.printf("TCP connected in %lu ms; registering role=%s\n",
+                      static_cast<unsigned long>(millis() - connectStarted),
+                      role_ == Protocol::Role::Sensor ? "sensor" : "actuator");
         client_.setNoDelay(true);
         state_ = State::Registering;
         registeredAt_ = millis();
@@ -109,7 +115,7 @@ void TcpConnection::flushTransmit(uint32_t now) {
     } else if (written == 0 || (errno != EAGAIN && errno != EWOULDBLOCK && errno != EINTR)) {
         disconnect();
     }
-    if (outputSize_ && now - txStartedAt_ >= static_cast<uint32_t>(settings_.connectTimeoutMs)) { disconnect(); }
+    if (outputSize_ && now - txStartedAt_ >= settings_.transmitTimeoutMs) { disconnect(); }
 }
 
 bool TcpConnection::nextMessage(Protocol::Message& message) {

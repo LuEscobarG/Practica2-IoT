@@ -7,6 +7,7 @@ struct ConnectionSettings {
     uint32_t retryMs;
     uint32_t registerTimeoutMs;
     int32_t connectTimeoutMs;
+    uint32_t transmitTimeoutMs = 1000;
 };
 
 class TcpConnection {
